@@ -1,10 +1,11 @@
 import React from 'react'
+import MainPaageLayout from '../components/MainPaageLayout'
 
 const Home = () => 
     (
-        <div>
+        <MainPaageLayout>
             this is home.
-        </div>
+        </MainPaageLayout>
     )
 
 export default Home
