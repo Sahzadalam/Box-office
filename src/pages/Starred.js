@@ -1,11 +1,11 @@
 import React from 'react'
-import MainPaageLayout from '../components/MainPaageLayout'
+import MainPageLayout from '../components/MainPageLayout'
 
 const Starred = () => 
    (
-        <MainPaageLayout>
+        <MainPageLayout>
             this is starred.
-        </MainPaageLayout>
+        </MainPageLayout>
     )
 
 export default Starred
