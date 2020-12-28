@@ -56,7 +56,7 @@ return null;
       <div>
 
       <label htmlFor="shows-search">
-        shows
+        Shows
         <input id ="shows-search" type="radio" value="shows" checked={isShowsSearch} onChange={onRadioChange}/>
       </label>
       <label htmlFor="actors-search">
