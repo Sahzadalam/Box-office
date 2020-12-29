@@ -13,7 +13,7 @@ function App() {
         <Route exact path="/show/:id">
            <Show />
         </Route>
-        
+        <div>Not Found</div>
       </Route>
     </Switch>
     );

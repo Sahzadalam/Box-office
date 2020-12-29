@@ -16,7 +16,7 @@ function showsReducer(prevState, action){
 }
 function usePersistedReducer(reducer, initialState, key) {
 
- const [state,dispatch] = useReducer(reducer, initialState, (initial) => {
+ const [state,dispatch] = useReducer(reducer, initialState, initial => {
 
  const persisted = localStorage.getItem(key);
 
@@ -25,10 +25,10 @@ function usePersistedReducer(reducer, initialState, key) {
  });
   useEffect(() => {
       localStorage.setItem(key, JSON.stringify(state))
-  }, [key, state])
+  }, [state, key])
    
  return [state,dispatch];
 }
-export function useShows(key='show') {
+export function useShows(key='shows') {
     return usePersistedReducer(showsReducer, [], key);
 }
