@@ -4,11 +4,11 @@ function showsReducer(prevState, action){
 
   switch (action.type){
     case 'ADD': {
-        return [...prevState,action.showid];
+        return [...prevState,action.showId];
     }
 
     case 'REMOVE': {
-        return prevState.filter(showid => showid !==action.showid);
+        return prevState.filter(showId => showId !==action.showId);
     }
 
     default:return prevState;
